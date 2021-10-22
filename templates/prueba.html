@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{%block cuerpo %}
+    <div class='ppal'>
+        {% for lin in datos %}
+        <div class='fila'>
+            <div class='c1'><a href='/enviar/?cod='+{{ lin[0] }}>{{ lin[0] }}</a></div>
+            <div class='c6'>{{ lin[1] }}</div>
+            <div class='c3'><img src='{{ url_for("static", filename="img/eye.png") }}' alt='NA' width='32px' /></div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

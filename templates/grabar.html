@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{%block cuerpo %}
+    <form name='fgraba' id='fgraba' method='POST' action='/grabar/'>
+        <div class='login'>
+            <div class='fila'>
+                <div class='c3'><label>Usuario</label></div>
+                <div class='c7'><input type='text' name='txtusr' id='txtusr' required /></div>
+            </div>
+            <div class='fila'>
+                <div class='c3'><label>Clave</label></div>
+                <div class='c7'><input type='password' name='txtpwd' id='txtpwd' required /></div>
+            </div>
+            <div class='fila'><br /><hr /><br /></div>
+            <div class='fila'>
+                <div class='c8'>&nbsp;</div>
+                <div class='c2'><input type='submit' name='envbtn' id='envbtn' value='enviar' /></div>
+            </div>
+        </div>
+    </form>
+{% endblock %}
